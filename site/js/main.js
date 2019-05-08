@@ -1,21 +1,21 @@
 let i = 0
 let boxes = document.querySelectorAll(".start")
 while(i < boxes.length){
-    let box = boxes[i]
-    x_pos = Math.floor(Math.random() * 80)
-    y_pos = Math.floor(Math.random() * 80)
-    box.style.left = x_pos+'%'
-    box.style.top = y_pos+'%'
-    i++;
-    console.log("OMG")   
+	let box = boxes[i]
+	x_pos = Math.floor(Math.random() * 80)
+	y_pos = Math.floor(Math.random() * 80)
+	box.style.left = x_pos+'%'
+	box.style.top = y_pos+'%'
+	i++;
+	console.log("OMG")   
 }
 
 function wait(ms)
 {
-var d = new Date();
-var d2 = null;
-do { d2 = new Date(); }
-while(d2-d < ms);
+	var d = new Date();
+	var d2 = null;
+	do { d2 = new Date(); }
+	while(d2-d < ms);
 }
 
 var c = document.getElementById("c");
@@ -26,7 +26,7 @@ c.height = window.innerHeight;
 c.width = window.innerWidth;
 
 //chinese characters - taken from the unicode charset
-var chinese = "10GETGOOD01010101010101010101101010100010101010010101";
+var chinese = "10GETGOOD010101010101010101011010101000101010100101010101010101101010101101010101101010101010101010101010101010001010101010101001001010";
 //converting the string into an array of single characters
 chinese = chinese.split("");
 
@@ -37,7 +37,7 @@ var drops = [];
 //x below is the x coordinate
 //1 = y co-ordinate of the drop(same for every drop initially)
 for(var x = 0; x < columns; x++)
-	drops[x] = 1; 
+drops[x] = 1; 
 
 //drawing the characters
 function draw()
@@ -52,7 +52,7 @@ function draw()
 	//looping over drops
 	for(var i = 0; i < drops.length; i++)
 	{
-        wait(2);
+		wait(2);
 		//a random chinese character to print
 		var text = chinese[Math.floor(Math.random()*chinese.length)];
 		//x = i*font_size, y = value of drops[i]*font_size
@@ -61,15 +61,27 @@ function draw()
 		//sending the drop back to the top randomly after it has crossed the screen
 		//adding a randomness to the reset to make the drops scattered on the Y axis
 		if(drops[i]*font_size > c.height && Math.random() > 0.975)
-			drops[i] = 0;
+		drops[i] = 0;
 		
 		//incrementing Y coordinate
-        drops[i]++;
-        
+		drops[i]++;
+		
 	}
 }
 
 setInterval(draw, 33);
 
+function lada(){	
+	let laddor = document.querySelectorAll(".box")
+	for(i = 0; i < 100; i++){
+		wait(2);
+		for (i = 0; i < laddor.length; i++) {
+			let ladd = laddor[i]
+			rand = Math.floor(Math.random() * 16)
+			ladd.setAttribute("id", rand)
+			console.log("test")
+		}
+	}
+}
 
 

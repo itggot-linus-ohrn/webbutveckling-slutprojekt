@@ -156,6 +156,7 @@ a#right{
 
 
 .picture{
+    display: none;
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -163,10 +164,12 @@ a#right{
 
 
 #morse{
+    display: flex;
     background-image: url("../img/morse-mobile.png");
 }
 
 #dead{
+    display: flex;
     background-image: url("../img/deadchicken.png")
 }
 
@@ -175,3 +178,86 @@ canvas#c{
     height: 80vh;
     width: 100vw;
 }
+
+#level9{
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.bigbox{
+    width: 35%;
+    height: 25%;
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 50%;
+    height: 50%;
+}
+
+#1{
+background-color: aqua;
+}
+ 
+#2{
+background-color: blueviolet;
+}
+ 
+#3{
+background-color: chocolate;
+}
+ 
+#4{
+background-color: chartreuse;
+}
+ 
+#5{
+background-color: crimson;
+}
+ 
+#6{
+background-color: indianred;
+}
+ 
+#7{
+background-color: darkkhaki;
+}
+ 
+#8{
+background-color: deepskyblue;
+}
+ 
+#9{
+background-color: darkorchid;
+}
+ 
+#10{
+background-color: deeppink;
+}
+ 
+#11{
+background-color: aliceblue:
+}
+ 
+#12{
+background-color: forestgreen;
+}
+ 
+#13{
+background-color: lightcoral;
+}
+ 
+#14{
+background-color: honeydew;
+}
+ 
+#15{
+background-color: lime;
+}
+ 
+#16{
+background-color: mediumspringgreen;
+}
+ 
