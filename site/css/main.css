@@ -136,7 +136,7 @@ a#left{
 }
 
 a#right{
-
+    
     left: 30%;
 }
 
@@ -184,80 +184,68 @@ canvas#c{
     align-items: baseline;
 }
 
+.grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "topleft topright"
+    "bottomleft bottomright";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+
+#topleft{
+    grid-area: topleft;
+}
+
+#topright{
+    grid-area: topright;
+}
+
+#bottomleft{
+    grid-area: bottomleft;
+}
+
+#bottomright{
+    grid-area: bottomright;
+}
+
 .bigbox{
-    width: 35%;
-    height: 25%;
-    margin: 5%;
-    display: flex;
-    flex-wrap: wrap;
+    width: 90%;
+    height: 90%;
+    padding: 5%;
+    display: grid;
+    grid-template-areas: 
+    "1 2"
+    "3 4";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
 }
 
 .box{
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
-#1{
-background-color: aqua;
+[id="0"]{
+    background-color: mediumspringgreen;
+    grid-area: 1;
 }
- 
-#2{
-background-color: blueviolet;
+[id="1"]{
+    background-color: aqua;
+    grid-area: 2;
 }
- 
-#3{
-background-color: chocolate;
+
+[id="2"]{
+    background-color: blueviolet;
+    grid-area: 3;
 }
- 
-#4{
-background-color: chartreuse;
+
+[id="3"]{
+    background-color: chocolate;
+    grid-area: 4;
 }
- 
-#5{
-background-color: crimson;
-}
- 
-#6{
-background-color: indianred;
-}
- 
-#7{
-background-color: darkkhaki;
-}
- 
-#8{
-background-color: deepskyblue;
-}
- 
-#9{
-background-color: darkorchid;
-}
- 
-#10{
-background-color: deeppink;
-}
- 
-#11{
-background-color: aliceblue:
-}
- 
-#12{
-background-color: forestgreen;
-}
- 
-#13{
-background-color: lightcoral;
-}
- 
-#14{
-background-color: honeydew;
-}
- 
-#15{
-background-color: lime;
-}
- 
-#16{
-background-color: mediumspringgreen;
-}
- 
+
+

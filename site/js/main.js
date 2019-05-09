@@ -73,15 +73,16 @@ setInterval(draw, 33);
 
 function lada(){	
 	let laddor = document.querySelectorAll(".box")
-	for(i = 0; i < 100; i++){
-		wait(2);
-		for (i = 0; i < laddor.length; i++) {
-			let ladd = laddor[i]
-			rand = Math.floor(Math.random() * 16)
-			ladd.setAttribute("id", rand)
-			console.log("test")
-		}
+	for (i = 0; i < laddor.length; i++) {
+		let ladd = laddor[i]
+		rand = Math.floor(Math.random() * 4)
+		ladd.setAttribute("id", rand)
+		console.log("test")
 	}
+	setTimeout(ladaloop, 500)
 }
 
+function ladaloop(){
+	lada()
+}
 
