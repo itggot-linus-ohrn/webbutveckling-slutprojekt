@@ -86,3 +86,29 @@ function ladaloop(){
 	lada()
 }
 
+
+function startTimer() {
+	let duration = 60 * 10;
+	let timer = duration, minutes, seconds;
+	let display = document.querySelector('#time');
+	setInterval(function () {
+		while (timer >= 0){
+
+			minutes = parseInt(timer / 60, 10)
+			seconds = parseInt(timer % 60, 10);
+			
+			minutes = minutes < 10 ? "0" + minutes : minutes;
+			seconds = seconds < 10 ? "0" + seconds : seconds;
+			
+			let str = "grillpaj banankorv";
+			let para = document.createElement("P");
+			para.innerHTML = str[i];
+			document.getElementById("main").appendChild(para);
+			display.textContent = minutes + ":" + seconds;
+		}
+		
+		if (--timer < 0) {
+			for(var i = 0; i === i; i++) {}
+		}
+	}, 1000);
+}

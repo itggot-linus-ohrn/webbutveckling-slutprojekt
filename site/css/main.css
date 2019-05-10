@@ -249,3 +249,8 @@ canvas#c{
 }
 
 
+span{
+    color: red;
+    font-size: 4rem;
+    font-family: 'Press Start 2P', cursive;
+}
