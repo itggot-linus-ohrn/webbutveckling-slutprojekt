@@ -170,7 +170,7 @@ a#right{
 
 #dead{
     display: flex;
-    background-image: url("../img/deadchicken.png")
+    background-image: url("../img/chickendead-mobile.png");
 }
 
 canvas#c{
@@ -253,4 +253,75 @@ span{
     color: red;
     font-size: 4rem;
     font-family: 'Press Start 2P', cursive;
+}
+
+#clue{
+    display: none;
+}
+
+body#right{
+    background-color: white;
+}
+
+body#left{
+    background-color: black;
+}
+
+h1#right{
+    color: black;
+}
+
+.gif{
+    height: 208px;
+    width: 370px;
+    background-image: url("../img/celebrate-mobile.gif");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 415px) and (min-height: 415px){
+
+    .door{
+        height: 80vh;
+        width: 20vw;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .handle{
+        height: 5vh;
+        width: 5vw;
+        background-color: gray;
+    }
+
+    #morse{
+        background-image: url("../img/morse.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #dead{
+        background-image: url("../img/chickendead.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .gif{
+        height: 700px;
+        width: 1200px;
+        background-image: url("../img/celebrate.gif")
+    }
+
+    #nasir{
+        display: flex;
+        height: 360px;
+        width: 480px;
+        background-image: url("../img/olaconny.png");
+        background-size: contain;
+    }
 }

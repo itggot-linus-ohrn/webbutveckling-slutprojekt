@@ -52,7 +52,7 @@ function draw()
 	//looping over drops
 	for(var i = 0; i < drops.length; i++)
 	{
-		wait(2);
+		wait(0);
 		//a random chinese character to print
 		var text = chinese[Math.floor(Math.random()*chinese.length)];
 		//x = i*font_size, y = value of drops[i]*font_size
@@ -88,27 +88,45 @@ function ladaloop(){
 
 
 function startTimer() {
+	dodoStuff()
 	let duration = 60 * 10;
 	let timer = duration, minutes, seconds;
 	let display = document.querySelector('#time');
 	setInterval(function () {
-		while (timer >= 0){
-
-			minutes = parseInt(timer / 60, 10)
-			seconds = parseInt(timer % 60, 10);
-			
-			minutes = minutes < 10 ? "0" + minutes : minutes;
-			seconds = seconds < 10 ? "0" + seconds : seconds;
-			
-			let str = "grillpaj banankorv";
-			let para = document.createElement("P");
-			para.innerHTML = str[i];
-			document.getElementById("main").appendChild(para);
-			display.textContent = minutes + ":" + seconds;
-		}
+		
+		minutes = parseInt(timer / 60, 10)
+		seconds = parseInt(timer % 60, 10);
+		
+		minutes = minutes < 10 ? "0" + minutes : minutes;
+		seconds = seconds < 10 ? "0" + seconds : seconds;
+		
+		// let str = "grillpaj banankorv";
+		// let para = document.createElement("P");
+		// para.innerHTML = str[i];
+		// document.getElementById("main").appendChild(para);
+		display.textContent = minutes + ":" + seconds;
+		
 		
 		if (--timer < 0) {
 			for(var i = 0; i === i; i++) {}
 		}
 	}, 1000);
+}
+
+
+
+function doStuff(){
+	let str = "grillpajbanankorv";
+	let rand = Math.floor(Math.random() * 17)
+	console.log(rand)
+	let para = document.createElement("P");
+	para.setAttribute("id", "clue")
+	para.innerHTML = str[rand];
+	document.getElementById("main").appendChild(para);
+	dodoStuff()
+}
+
+function dodoStuff(){
+	// document.getElementById("clue").remove();
+	setTimeout(doStuff, 1000)
 }
