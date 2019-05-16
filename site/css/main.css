@@ -189,39 +189,12 @@ canvas#c{
     height: 100%;
     display: grid;
     grid-template-areas: 
-    "topleft topright"
-    "bottomleft bottomright";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-}
-
-
-#topleft{
-    grid-area: topleft;
-}
-
-#topright{
-    grid-area: topright;
-}
-
-#bottomleft{
-    grid-area: bottomleft;
-}
-
-#bottomright{
-    grid-area: bottomright;
-}
-
-.bigbox{
-    width: 90%;
-    height: 90%;
-    padding: 5%;
-    display: grid;
-    grid-template-areas: 
-    "1 2"
-    "3 4";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    "zero one two three"
+    "four five six seven"
+    "eight nine ten eleven"
+    "twelve thirteen fourteen fifteen";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
 }
 
 .box{
@@ -231,22 +204,81 @@ canvas#c{
 
 [id="0"]{
     background-color: mediumspringgreen;
-    grid-area: 1;
+    grid-area: zero;
 }
+
 [id="1"]{
     background-color: aqua;
-    grid-area: 2;
+    grid-area: one;
 }
 
 [id="2"]{
     background-color: blueviolet;
-    grid-area: 3;
+    grid-area: two;
 }
 
 [id="3"]{
     background-color: chocolate;
-    grid-area: 4;
+    grid-area: three;
 }
+[id="4"]{
+    background-color: plum;
+    grid-area: four;
+}
+
+[id="5"]{
+    background-color: dodgerblue;
+    grid-area: five;
+}
+
+[id="6"]{
+    background-color: indianred;
+    grid-area: six;
+}
+
+[id="7"]{
+    background-color: mediumvioletred;
+    grid-area: seven;
+}
+[id="8"]{
+    background-color: lightseagreen;
+    grid-area: eight;
+}
+
+[id="9"]{
+    background-color: peachpuff;
+    grid-area: nine;
+}
+
+[id="10"]{
+    background-color: lime;
+    grid-area: ten;
+}
+
+[id="11"]{
+    background-color: forestgreen;
+    grid-area: eleven;
+}
+[id="12"]{
+    background-color: lightyellow;
+    grid-area: twelve;
+}
+
+[id="13"]{
+    background-color: coral;
+    grid-area: thirteen;
+}
+
+[id="14"]{
+    background-color: sandybrown;
+    grid-area: fourteen;
+}
+
+[id="15"]{
+    background-color: magenta;
+    grid-area: fifteen;
+}
+
 
 
 span{

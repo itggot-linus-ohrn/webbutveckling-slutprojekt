@@ -52,7 +52,7 @@ function draw()
 	//looping over drops
 	for(var i = 0; i < drops.length; i++)
 	{
-		wait(0);
+		wait(2);
 		//a random chinese character to print
 		var text = chinese[Math.floor(Math.random()*chinese.length)];
 		//x = i*font_size, y = value of drops[i]*font_size
@@ -75,11 +75,11 @@ function lada(){
 	let laddor = document.querySelectorAll(".box")
 	for (i = 0; i < laddor.length; i++) {
 		let ladd = laddor[i]
-		rand = Math.floor(Math.random() * 4)
+		rand = Math.floor(Math.random() * 16)
 		ladd.setAttribute("id", rand)
 		console.log("test")
 	}
-	setTimeout(ladaloop, 500)
+	setTimeout(ladaloop, 1000)
 }
 
 function ladaloop(){
